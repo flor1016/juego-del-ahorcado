@@ -4,11 +4,9 @@ var x=425;
 var x1=425;
 var x2=425;
 var letras=[];
-var listaDePalabras = ["lienzo","manzana", "banana","lapiz","flotante","bolsillos","arrogante","simpatico"];
+var listaDePalabras = ["orden","lienzo","lejos","manzana", "bloque","lapiz","flotante","bolsillos","arrogante","simpatico"];
 var palabraActiva = palabra(listaDePalabras);
-console.log(palabraActiva);
 cantidadLetras= palabraActiva.length;
-console.log(cantidadLetras);
 
 var botonIniciarJuego = document.querySelector("#iniciar-juego");
 botonIniciarJuego.addEventListener("click",function(event){
@@ -90,3 +88,29 @@ function letraCorrectaIncorrecta(letraPresionada,palabraActiva,x1){
     }
 }
 
+var botonCargarPalabras= document.querySelector("#nueva-palabra");
+botonCargarPalabras.addEventListener("click",function(event){
+   var ingresar = document.getElementById("input-nueva-palabra").value;
+   palabraIngresada=ingresar.toLowerCase();
+   checkTextoUsuario(palabraIngresada);
+   if (checkTextoUsuario(palabraIngresada)){
+    listaDePalabras.push(palabraIngresada);
+   }   
+});
+
+
+function checkTextoUsuario(texto){
+    if (texto.length==0){
+        alert("Debe introducir un mensaje.");
+        return false;
+    } else{    
+        for(var i=0;i<texto.length;i++){
+            var textoAscii= texto.charCodeAt(i);
+            if(textoAscii<96 || textoAscii>122 ){
+                alert("No se puede introducir caracteres especiales ni numeros. Por favor intentelo de nuevo.");
+                return false;                
+            }                                         
+        }
+    } 
+    return true;   
+}
