@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="shortcut icon" href="imagenes/favicon.jpg">
+    <!-- iconos -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+    
+  </head>
+  <body>
+    <div style="text-align:center; margin: 50px 0px;">
+      <h1 class="titulo">Juego del Ahorcado</h1>
+      <button class="btn" id="iniciar-juego" onclick= "this.disabled = true">INICIAR JUEGO</button>
+    </div>
+    <div style="text-align:center">
+      <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+    </div>
+    <div style="text-align:center">
+      <button class="btn" id="reiniciar-juego" onclick=  "location = 'C:/Users/Flor/Desktop/Challenge1.b/index.html'">JUGAR OTRA VEZ
+      </button> 
+    </div>
+    <div class="canvas"  style="text-align:center;">
+      <canvas width="1000" height="600">
+        
+      </canvas>
+    </div>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/ahorcado.js"></script>
+  </body>
+
+  <footer>
+    <div class="wanner-wrapper">
+        <div class="icon-text">
+          <ul class="social">
+            <li>
+              <a href="mailto:fsf1016@hotmail.com" target="_blanck">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/florencia-soledad-fernandez-937096111/"" target="_blanck">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://instagram.com" target="_blanck">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/flor1016" target="_blanck">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <footer class="footer-second">
+    <p>&copy; 2022 Desarrollado por Florencia Fernandez 
+    </p>
+  </footer>
+</html>
