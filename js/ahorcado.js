@@ -10,6 +10,7 @@ cantidadLetras= palabraActiva.length;
 
 var botonIniciarJuego = document.querySelector("#iniciar-juego");
 botonIniciarJuego.addEventListener("click",function(event){
+    pantalla.scrollIntoView({block: "end", behavior: "smooth"}); //Se mueve la pantalla hasta el canvas
     dibujoAhorcado();
     palabraRayada = palabraActiva.replace(/./g,"_ ");
     rayas(palabraRayada);    
@@ -74,7 +75,7 @@ function letraCorrectaIncorrecta(letraPresionada,palabraActiva,x1){
                     case 5: dibujoPiernaDerecha();
                     break;
                     case 6: dibujoPiernaIzquierdo();
-                            finJuego();
+                            finJuego("La palabra era:",palabraActiva);
                             document.removeEventListener('keydown',letrasTeclado);
                        
                     break;             

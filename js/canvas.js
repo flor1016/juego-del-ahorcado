@@ -113,11 +113,12 @@ function letraCorrecta(letraPresionada,x1){
 }
 
 
-function finJuego(){
+function finJuego(palabra,palabraActiva){
     pincel.fillStyle = 'red';
     pincel.font="30pt Verdana";
-    pincel.fillText("Fin del Juego",425,400); 
-
+    pincel.fillText("Fin del Juego",425,400);
+    pincel.fillText(palabra,425,450);
+    pincel.fillText(palabraActiva,740,450);
 }
 
 function Gano(){

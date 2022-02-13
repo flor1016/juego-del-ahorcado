@@ -1,30 +1,71 @@
+/****************************/
+/* COMMON STYLES*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Shizuru', cursive;
+  list-style-type: none;
+  text-decoration: none;
 }
 
+:root{
+  --primary-color: #B9FBC0;
+  --secondary-color: #98F5E1;
+  --white-color: #fff;
+  --botton-color: #A3C4F3;
+  --contraste-color: #FDE4CF;
+  --grey-color: #555;
+  --black-color:#000; 
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: var(--secondary-color);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+  justify-content:center;
+}
+
+/* END OF COMMON STYLES*/
+/****************************/
+
+/****************************/
+/* AHORCADO*/
+.juego{
+  width:100%;  
+}
 .titulo {
-  padding: 15px;
-  width: 30vw;
-  margin: auto;
+  padding: 15px; 
+  text-align: center;  
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 .3rem .5rem var(--grey-color);
 }
 
 .btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
+  border:2px solid;
+  border-color: #000;
+  color:var(--secondary-color);
   background-color: #2F3E46;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: .5rem;
   border-radius: 0.5em;
+  letter-spacing: 0.1rem;
+  margin: 1rem;
 }
 
 .btn:hover{
   cursor: pointer;
-  background-color: #84A98C;
+  background-color:#90DBF4;
   color: black;
+  border:2px solid;
+  border-color: #000;
 }
 
 .text-input {
@@ -34,14 +75,15 @@
   padding: 0.5em;
   width: 30%;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* estilo de pie de pagina */
+  margin: 1rem;
+}  
+  /* END OF AHORCADO*/
+/****************************/
+/****************************/
+/* FOOTER */
 
 footer{
-  background: #2F3E46;
+  background:var(--grey-color);
   width: 100%;
   overflow: auto;
   margin-bottom: 0;    
@@ -80,4 +122,27 @@ display: inline;
   text-align: center;
   color: #fff;
   font: 160%;
+}
+
+/* END OF FOOTER*/
+/****************************/
+
+@media(max-width:1000px){
+  .canva-wrapper{
+    width: 60%;
+  }
+}
+
+@media(max-width:670px){
+  .canva{
+    width: 40%;
+    height: 40%;
+  }
+  .titulo {
+    padding: 5px; 
+    text-align: center;  
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 .2rem .3rem var(--grey-color);
+  }
 }
