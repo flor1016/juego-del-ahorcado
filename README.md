@@ -1,7 +1,8 @@
 # juego-del-ahorcado
 Segundo Challenge de Principiante en Programación programa Oracle Next Education con Alura Latam:
 
-Se debe realizar un aplicativo web que crea un juego del Ahorcado
+Se debe realizar un aplicativo web que crea un juego del Ahorcado desarrollado con tecnología HTML,CSS y JavaScript.
+
 Especificaciones:
  - La palabra para que el usuario adivine debe ser aleatoria de una lista.
  - Si el usuario lo desea se debe poder agregar palabras a la lista.
